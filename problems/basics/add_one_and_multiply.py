@@ -33,6 +33,7 @@ def do_test_add_one_and_multiply(a, x, expected):
 
 def test_add_one_and_multiply_1():
     do_test_add_one_and_multiply(a=0, x=0, expected=0)
+    (0 + 1) * 0
 
 
 def test_add_one_and_multiply_2():

@@ -6,8 +6,15 @@ def sublists(lst):
     
     Returns: (list of list of values) list of all sublists of lst.
     """
-
-    pass
+    result = []
+    if lst == []:
+        result.append(lst)
+    else:
+        first, *rest = lst
+        for x in sublists(rest):
+            result.append(x)
+            result.append([first] + x)
+    return result
 
 
 #############################################################
